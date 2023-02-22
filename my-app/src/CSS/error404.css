@@ -1,0 +1,23 @@
+.Error404{
+    min-width: 100%;
+    display: grid;
+    justify-content: center;  
+}
+
+/* .Error404 img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+} */
+.Error404 h1{
+    color: #FF6060;
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+}
+.Error404 a{
+    color: #FF6060;
+    display: grid;
+    justify-content: center;
+    padding: 50px;
+}

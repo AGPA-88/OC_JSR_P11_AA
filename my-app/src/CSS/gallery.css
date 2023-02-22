@@ -1,0 +1,38 @@
+body{
+  padding: 25px;
+}
+
+#gallery{
+  background-color: #F6F6F6;
+  /* min-width: 80%; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+  padding-top: 25px;
+  margin-top: 25px;
+  border-radius: 25px;
+}
+.img_block{
+  background: linear-gradient(180deg, rgba(255, 96, 96, 1) 0%, rgba(0, 0, 0, 0.5) 100%);
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  margin-bottom: 50px;
+}
+.img_block img{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+}
+.img_block p{
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;  
+  position: absolute;
+  padding-left: 10px;
+}
