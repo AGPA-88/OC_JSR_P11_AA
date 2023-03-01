@@ -1,0 +1,13 @@
+.tag{
+   display: flex;
+   justify-content: space-around;
+   min-width: 115px;
+   border: #FF6060 solid 5px;
+   color: white;
+   background-color: #FF6060;
+   border-radius: 50px;
+   margin-right: 15px;
+}
+.tags{
+   display: flex;
+}
