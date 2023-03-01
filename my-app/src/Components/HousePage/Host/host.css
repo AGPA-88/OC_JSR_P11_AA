@@ -1,0 +1,12 @@
+.house-host{
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+}
+#host-name{
+   font-size: 25px;
+   padding-right: 10px;
+}
+#host-photo img{
+   border-radius: 50%;
+}
