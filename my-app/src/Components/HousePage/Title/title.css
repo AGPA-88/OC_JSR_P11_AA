@@ -1,0 +1,5 @@
+#name-frame{
+   display: flex;
+   justify-content: space-between;
+   color: #FF6060;
+}
