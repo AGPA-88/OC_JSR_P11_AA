@@ -1,0 +1,9 @@
+.house-rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+.ratings{
+    color: #FF6060;
+ }
+ 
