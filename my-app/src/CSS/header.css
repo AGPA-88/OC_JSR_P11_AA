@@ -11,12 +11,18 @@ navbar{
     padding-left: 20px;
     padding-right: 20px; */
   }
+  .links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
   .links a{
     text-decoration: none;
     color: #FF6060;
-    display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 25px;
   }
   .links a:hover{
     text-decoration: underline;
