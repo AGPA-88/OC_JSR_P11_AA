@@ -1,0 +1,17 @@
+.house-gallery{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.house-gallery i{
+   color: #FF6060!important;
+   font-size: 100px;
+   cursor: pointer;
+}
+.house-gallery img{
+   width: 1240px;
+   height: 415px;
+   object-fit: none;
+   object-position: center;
+}
