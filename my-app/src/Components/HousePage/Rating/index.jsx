@@ -9,10 +9,10 @@ function Rating({rating}) {
     return(
         <div className='ratings'>
             {fullStars.map((star, index) => {
-                return <i className='fa-solid fa-star' key={index}></i>
+                return <i id='fullStar' className='fa-solid fa-star' key={index}></i>
             })}
             {emptyStars.map((star, index) => {
-                return <i className='fa-regular fa-star' key={index}></i>
+                return <i id='emptyStar' className='fa-solid fa-star' key={index}></i>
             })}
 
         </div>

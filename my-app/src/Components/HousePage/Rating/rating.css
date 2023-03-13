@@ -1,9 +1,51 @@
 .house-rating{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
- }
+    flex-direction: column;
+    align-items: end;
+}
 .ratings{
-    color: #FF6060;
+    font-size: 25px;
+    margin-top: 20px;
+    /* width: 196px; */
  }
+
+#fullStar{
+    color: #FF6060;
+}
+#emptyStar{
+    color: lightgrey;
+}
  
+
+/* MEDIA QUERIES */
+
+/* Small screens: screens up to 767px wide */
+@media screen and (max-width: 767px) {
+    /* CSS rules for small screens */
+    .house-rating {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: start;
+      justify-content: space-between;
+      width: 100%;
+      padding-top: 20px;
+    }
+    .ratings{
+        font-size: 15px;
+    }
+  }
+
+/* Medium screens: screens between 768px and 991px wide */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    /* CSS rules for medium screens */
+    .house-rating {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .ratings{
+        font-size: 20px;
+    }
+}
