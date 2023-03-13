@@ -1,7 +1,7 @@
 import houses from '../data.json';
 import { useParams } from 'react-router-dom';
 // import { useState } from 'react';
-// import '../CSS/house.css'
+import '../CSS/house.css'
 
 import Error404 from '../Pages/Error404Page';
 import Header from '../Components/Header';
@@ -11,6 +11,7 @@ import Title from '../Components/HousePage/Title';
 import Host from '../Components/HousePage/Host';
 import Tags from '../Components/HousePage/Tags';
 import Rating from '../Components/HousePage/Rating';
+import Details from '../Components/HousePage/Details';
 
 function Housepage () {
     const { id } = useParams();
@@ -24,39 +25,22 @@ function Housepage () {
     return (
       <div>
           <Header />
-          PAGE UNDER CONSTRUCTION: {house.id}
-          <br/>
-          <br/>
             <Gallery gallery={house.pictures} />
-          <br/>
-          <br/>
-          
-          <div id='name-frame'>
-            <Title title={house.title} location={house.location} />
-            <br/>
-            <Host />
+          <div className='house-details'>
+            <div id='name-frame'>
+              <Title title={house.title} location={house.location} />
+              <Tags tags={house.tags}/>
+            </div>
+            <div className='house-rating'>
+              <Host />
+              <Rating rating={house.rating}/>
+            </div>
           </div>
-
-          <br/>
-          <br/>
-
-          <div className='house-rating'>
-            <Tags tags={house.tags}/>
-          <br/>
-            <Rating rating={house.rating}/>
-          </div>
-
-          <br/>
-          <br/>
 
           <div className='house-description'>
-            <h2>DESCRIPTION:</h2> {house.description}
-          <br/>
-            <h2>EQUIPEMENTS:</h2> {house.Amenities}
+            <Details content={house.description} name="Description"/>
+            <Details content={house.Amenities} name="Equipements"/>
           </div>
-
-          <br/>
-
         <Footer />
         </div>
     )
