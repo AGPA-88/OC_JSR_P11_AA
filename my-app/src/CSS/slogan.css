@@ -29,3 +29,75 @@
     border-image: stretch;
 
   }
+  
+/* MEDIA QUERIES */
+
+/* Small screens: screens between 320px and 767px wide */
+@media screen and (max-width: 767px) {
+  .slogan {
+    text-align: center;
+  }
+  .App-image {
+    display: block;
+    width: 90%;
+    height: 15%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .slogan p{
+    /* font-size: 20px; */
+    font-size: calc(10px + 2vmin);
+  }
+}
+
+/* Medium screens: screens between 768px and 991px wide */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .App-image {
+    display: block;
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .slogan p{
+    /* font-size: 20px; */
+    font-size: calc(10px + 2vmin);
+  }
+}
+
+/* Large screens: screens between 992px and 1199px wide */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .slogan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .App-image {
+    display: block;
+    width: 30%;
+    margin-right: 20px;
+  }
+}
+
+/* Extra-large screens: screens 1200px and wider */
+@media screen and (min-width: 1200px) {
+  .slogan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .App-image {
+    display: block;
+    width: 20%;
+    margin-right: 20px;
+  }
+}

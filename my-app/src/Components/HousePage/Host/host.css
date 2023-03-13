@@ -2,11 +2,54 @@
    display: flex;
    align-items: center;
    justify-content: flex-end;
+   color: #FF6060;
+   /* padding-top: 25px; */
 }
 #host-name{
-   font-size: 25px;
-   padding-right: 10px;
+   font-size: 18px;
+   font-weight: 500;
+   width: 100px;
 }
 #host-photo img{
    border-radius: 50%;
+   width: 64px;
+   height: 64px;
 }
+
+/* MEDIA QUERIES */
+
+/* Small screens: screens up to 767px wide */
+@media screen and (max-width: 767px) {
+   /* CSS rules for small screens */
+   .house-host {
+     display: flex;
+     align-items: center;
+     justify-content: end;
+ 
+   }
+ }
+ 
+ /* Medium screens: screens between 768px and 991px wide */
+ @media screen and (min-width: 768px) and (max-width: 991px) {
+   /* CSS rules for medium screens */
+   .house-host {
+      display: flex;
+      /* flex-direction: row; */
+      align-items: end;
+      justify-content: end;
+      /* width: 100%; */
+    }
+    #host-photo{
+      display: flex;
+      align-items: center;
+    }
+ }
+
+ /* Large screens: screens between 992px and 1199px wide */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+   /* CSS rules for large screens */
+    .house-gallery i{
+       font-size: 50px;
+       margin: -10%;
+    }
+ }

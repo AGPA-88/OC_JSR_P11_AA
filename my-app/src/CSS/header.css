@@ -1,19 +1,14 @@
 /* NAVBAR */
 navbar{
     width: 100%;
+    margin-bottom: 25px;
   }
   .navbar-links{
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
-    /* margin-top: 20px;
-    margin-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px; */
   }
   .links{
     display: flex;
-    justify-content: space-around;
     align-items: center;
 
   }
@@ -29,18 +24,85 @@ navbar{
   }
 
   .App-header {
-    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* font-size: 24px; */
     font-size: calc(10px + 2vmin);
     color: white;
   }
 
   .App-logo {
-    max-height: 40vmin;
+    /* max-height: 40vmin; */
     pointer-events: none;
     max-width: 200px;
-    padding: 25px;
+    padding-top: 25px;
   }
+
+  /* MEDIA QUERIES */
+
+/* Small screens: screens between 320px and 767px wide */
+@media screen and (max-width: 767px) {
+  .navbar-links {
+    display: flex;
+  }
+  .navbar-links.show {
+    display: block;
+  }
+  .navbar-links.show .links {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+  }
+  .navbar-links .links a {
+    padding: 12px;
+  }
+  .navbar-links img{
+    width: 75%;
+    padding-left: 15px;
+  }
+}
+
+/* Medium screens: screens between 768px and 991px wide */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .links {
+    display: flex;
+  }
+}
+
+/* Large screens: screens between 992px and 1199px wide */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .navbar-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .links {
+    display: flex;
+  }
+}
+
+/* Extra-large screens: screens 1200px and wider */
+/* @media screen and (min-width: 1200px) {
+  .navbar-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .links a {
+    margin-right: 20px;
+  }
+} */
