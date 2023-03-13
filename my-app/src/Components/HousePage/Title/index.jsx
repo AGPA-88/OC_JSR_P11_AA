@@ -3,13 +3,13 @@ import './title.css'
 function Title({title, location}) {
 
     return(
-        <div className='house-location'>
-            <h1>
+        <div className='house-name'>
+            <div className='house-title'>
                 {title}
-            </h1>
-            <p>
+            </div>
+            <div className='house-location'>
                 {location}
-            </p>
+            </div>
       </div>
     )
 }

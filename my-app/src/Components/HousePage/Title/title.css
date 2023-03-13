@@ -1,5 +1,44 @@
 #name-frame{
    display: flex;
-   justify-content: space-between;
+   flex-direction: column;
    color: #FF6060;
 }
+
+.house-name{
+   margin-bottom: 20px;
+}
+
+.house-title{
+   font-size: 36px;
+   font-weight: 500;
+}
+.house-location{
+   font-size: 18px;
+   font-weight: 500;
+}
+
+/* MEDIA QUERIES */
+
+/* Small screens: screens up to 767px wide */
+@media screen and (max-width: 767px) {
+   /* CSS rules for small screens */
+   #name-frame{
+     width: 100%;
+   }
+ }
+ 
+ /* Medium screens: screens between 768px and 991px wide */
+ @media screen and (min-width: 768px) and (max-width: 991px) {
+   /* CSS rules for medium screens */
+   #name-frame{
+      width: 100%;
+    }
+   .house-title{
+      font-size: 30px;
+      font-weight: 500;
+   }
+   .house-location{
+      font-size: 12px;
+      font-weight: 500;
+   }
+ }
