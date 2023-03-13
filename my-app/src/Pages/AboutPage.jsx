@@ -1,25 +1,13 @@
 import Header from "../Components/Header";
-import banner from '../about.svg';
-
+import AboutDescription from "../Components/AboutDescription";
+import Footer from "../Components/Footer";
 
 function About () {
     return (
         <div>
-            <h1>Page in construction.</h1>
             <Header />
-            <img src={banner} alt="banner" />
-            <button type="dropdown">
-                Reliability
-            </button>
-            <button>
-                Respect
-            </button>
-            <button>
-                Service
-            </button>
-            <button>
-                Safety
-            </button>
+            <AboutDescription />
+            <Footer />
         </div>
     )
 }
