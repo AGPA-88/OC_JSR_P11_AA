@@ -1,23 +1,62 @@
 .Error404{
     min-width: 100%;
     display: grid;
-    justify-content: center;  
+    justify-content: center; 
+    margin-top: 25px; 
 }
 
-/* .Error404 img{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-} */
-.Error404 h1{
+.error-text{
     color: #FF6060;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     width: 100%;
-    padding-top: 50px;
+    margin-top: 50px;
+    font-size: 36px;
+    font-weight: 500;
 }
 .Error404 a{
     color: #FF6060;
     display: grid;
     justify-content: center;
-    padding: 50px;
+    margin-top: 200px;
 }
+
+
+/* MEDIA QUERIES */
+
+/* Small screens: screens up to 767px wide */
+@media screen and (max-width: 767px) {
+    /* CSS rules for small screens */
+    .Error404{
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Error404 img{
+        width: 50%;
+    }
+    .error-text{
+        width: 50%;
+        text-align: center;
+        font-size: 18px;
+    }
+  }
+  
+  /* Medium screens: screens between 768px and 991px wide */
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    /* CSS rules for medium screens */
+    .Error404{
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Error404 img{
+        width: 50%;
+    }
+    .error-text{
+        font-size: 26px;
+    }
+  }
