@@ -1,8 +1,8 @@
 .lessExpand{
-    display: block;
+    display: none;
 }
 .moreExpand{
-    display: none;
+    display: block;
 }
 
 .house-description{
@@ -55,6 +55,7 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     list-style: none;
+    display: none;
 }
 ul{
     margin-top: 0;
