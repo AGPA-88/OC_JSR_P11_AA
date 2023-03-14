@@ -9,9 +9,11 @@ function Header() {
       <header className="App-header">
         <navbar>
             <div className="navbar-links">
-              <div>
-                <img src={logo} className="App-logo" alt="logo" />
-              </div>
+              <Link to="/home">
+                <div>
+                  <img src={logo} className="App-logo" alt="logo" />
+                </div>
+              </Link>
             <div className="links">
               <Link
               to="/home"
