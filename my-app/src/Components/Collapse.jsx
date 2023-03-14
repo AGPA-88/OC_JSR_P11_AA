@@ -7,7 +7,6 @@ function Collapse({name, content}) {
         className="fa-solid fa-chevron-up lessExpand"
         onClick={(e) => handleLessExpand(e, name)}
       >
-          {/* <i class="fa-solid fa-chevron-up"></i> */}
       </span>
     );
     

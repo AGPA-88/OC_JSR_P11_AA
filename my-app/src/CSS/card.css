@@ -1,12 +1,9 @@
 #card{
   background-color: #F6F6F6;
   min-width: 100%;
-  /* min-height: 80%; */
   display: flex;
   flex-wrap: wrap;
-  /* grid-template-columns: 1fr 1fr 1fr; */
   justify-content: space-between;
-  /* padding: 25px; */
   border-radius: 25px;
 }
 .img_block{

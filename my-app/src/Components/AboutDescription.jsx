@@ -1,5 +1,4 @@
 import banner from '../about.svg';
-// import Collapse from './Collapse';
 import Details from './HousePage/Details';
 
 function Description () {

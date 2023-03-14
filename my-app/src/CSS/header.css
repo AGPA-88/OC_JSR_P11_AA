@@ -89,20 +89,3 @@ navbar{
     display: flex;
   }
 }
-
-/* Extra-large screens: screens 1200px and wider */
-/* @media screen and (min-width: 1200px) {
-  .navbar-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .links a {
-    margin-right: 20px;
-  }
-} */
