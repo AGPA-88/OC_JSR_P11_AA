@@ -22,7 +22,7 @@ function Gallery({gallery}) {
 
     return (
         <div className='house-gallery'>
-            {gallery.length > 1 && <i class="fa-solid fa-chevron-left previousSlide" onClick={handlePreviousClick}></i>}
+            {gallery.length > 1 && <i className="fa-solid fa-chevron-left previousSlide" onClick={handlePreviousClick}></i>}
             <img src={gallery[pictureIndex]} alt='imagem'></img> 
             <div className='picture-index'>{pictureIndex +1}/{gallery.length} </div>     
             {gallery.length > 1 && <i className="fa-solid fa-chevron-right nextSlide" onClick={handleNextClick}></i>}
