@@ -7,9 +7,9 @@ const myJson = JsonData;
 function Card() {
     return (
         <div id="card">
-            {myJson.map(value => {
+            {myJson.map((value, index) => {
                 return (
-                <Link to={`/house/${value.id}`}>
+                <Link key={index} to={`/house/${value.id}`}>
                     <div className='img_block'>
                         <img src={value.cover} alt="house cover"/>
                         <p>
