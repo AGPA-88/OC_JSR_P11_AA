@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import React from 'react';
 import './CSS/App.css';
 import Homepage from './Pages/Homepage';

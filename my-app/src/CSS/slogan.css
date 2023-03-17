@@ -1,14 +1,14 @@
 .slogan{
-    background-color: transparent;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../header_img.svg');
+    background-size: cover;
     height: 223px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding-left: 20px;
-    padding-right: 20px; */
     border-radius: 25px;
     padding-top: 50px;
     padding-bottom: 50px;
+    margin-bottom: 40px!important;
   }
   .slogan p{
     color: white;
@@ -20,33 +20,19 @@
     font-size: 48px;
     font-weight: 500;
   }
-
-  .App-image{
-    min-width: 80%;
-    display: flex;
-    position: absolute;
-    border-radius: 25px;
-    border-image: stretch;
-
-  }
   
 /* MEDIA QUERIES */
 
 /* Small screens: screens between 320px and 767px wide */
 @media screen and (max-width: 767px) {
   .slogan {
-    text-align: center;
-  }
-  .App-image {
-    display: block;
-    width: 90%;
-    height: 15%;
-    object-fit: cover;
-    border-radius: 10px;
+    height: 25%;
+    justify-content: flex-start;
   }
   .slogan p{
-    /* font-size: 20px; */
-    font-size: calc(10px + 2vmin);
+    font-size: calc(15px + 2vmin);
+    max-width: 50%;
+    padding-left: 25px;
   }
 }
 
@@ -57,16 +43,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
-  }
-  .App-image {
-    display: block;
-    width: 50%;
-    margin-bottom: 20px;
+    height: 25%;
   }
   .slogan p{
-    /* font-size: 20px; */
-    font-size: calc(10px + 2vmin);
+    font-size: calc(20px + 2vmin);
   }
 }
 
@@ -77,12 +57,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    height: 25%;
   }
-  .App-image {
-    display: block;
-    width: 30%;
-    margin-right: 20px;
+  .slogan p{
+    font-size: calc(20px + 2vmin);
   }
 }
 
@@ -93,11 +71,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
-  }
-  .App-image {
-    display: block;
-    width: 20%;
-    margin-right: 20px;
+    height: 25%;
   }
 }
